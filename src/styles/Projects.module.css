@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Jenson;
+    src: url('Jenson.ttf')  format('truetype');
+  }
+
+  @font-face {
+    font-family: JensonItalic;
+    src: url('JensonItalic.ttf')  format('truetype');
+  }
+
+.font_size {
+    font-size: 3em;
+    padding: 0em;
+    margin:0em;
+    font-family: JensonItalic;
+}
+
+.proj_style {
+    width: 80%;
+}
+
+.proj_title {
+    font-size: 1.5em;
+    padding: 0em;
+    margin:0em;
+    font-family: JensonItalic;
+}

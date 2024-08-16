@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Jenson;
+    src: url('Jenson.ttf')  format('truetype');
+  }
+
+  @font-face {
+    font-family: JensonItalic;
+    src: url('JensonItalic.ttf')  format('truetype');
+  }
+
+.font_size {
+    font-family: Jenson;
+    font-size: 6em;
+    display: inline;
+    position: relative;
+}
+
+.font_size_2 {
+    font-family: Jenson;
+    font-size: 4em;
+    display: inline;
+}
+
+.sketch_home {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    padding: 0em;
+    height: 5em;
+    width: 18%;
+} 

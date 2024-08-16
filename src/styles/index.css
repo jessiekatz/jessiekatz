@@ -1,0 +1,91 @@
+@font-face {
+    font-family: Jenson;
+    src: url('Jenson.ttf')  format('truetype');
+  }
+
+  @font-face {
+    font-family: JensonItalic;
+    src: url('JensonItalic.ttf')  format('truetype');
+  }
+
+
+html, body, #root, .app-container {
+    /* background-color: rgb(250, 237, 249); */
+    background-color: rgb(252, 247, 252);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+#canvas-container {
+    height: 7vh; 
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+Nav {
+    color: black;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+}
+
+
+Nav ul {
+    position: absolute;
+}
+
+
+.content {
+    z-index: 1; 
+    margin: 2em 5em;
+    height: 20%;
+}
+
+
+
+
+.projs {
+    margin: 3em 5em;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0.5rem;
+    }
+
+    .footer {
+        padding: 0.5rem;
+    }
+
+    .nav-link {
+        margin: 0.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-link {
+        margin: 1em 0.5em;
+    }
+
+    nav {
+        padding: 0.3rem;
+    }
+
+    .footer {
+        padding: 0.3rem;
+    }
+
+    .sketch {
+        padding: 0;
+        width: 20%;
+    }
+
+}

@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './styles/App.css';
+import Home from './Home.js';
+import Footer from './Footer.js'
+import Content from './Content.js'
+import Nav from './Nav.js'
+import Projects from './Projects.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.projectsRef = React.createRef();
+      }
+  
+  render() {
+    return (
+        <div className="app-container">
+            <Nav projectsRef={this.projectsRef}/>
+
+            <div className="content">
+                <Home className="home" />
+                {/* <Content /> */}
+            </div>
+        {/* <Footer /> */}
+
+            <div className="projs" ref={this.projectsRef}>
+                <Projects name ="projects / experiments" />
+            </div>
+
+
+        </div>
+      );
+    }
 }
 
 export default App;

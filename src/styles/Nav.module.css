@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Jenson;
+    src: url('Jenson.ttf')  format('truetype');
+  }
+
+  @font-face {
+    font-family: JensonItalic;
+    src: url('JensonItalic.ttf')  format('truetype');
+  }
+
+  .nav_div {
+    width: 100%;
+    height: 8vh;
+    text-align: right;
+    top: 0;
+    position: sticky;
+}
+
+.ul_pad {
+    padding: 2em 1em 1em 1em;
+}
+
+.sketch_nav {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    padding: 0em;
+    height: 3.5em;
+    width: 8em;
+} 
+
+  .nav_link {
+    font-family: Jenson;
+    color: black;
+    text-align: right;
+    list-style-type: none;
+    z-index: 1;
+    display: inline-block;
+    /* margin: 0.2em 2em 0em 2em; */
+    font-size: 1.75em;
+}
