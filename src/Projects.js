@@ -5,6 +5,8 @@ import styles from "./styles/Projects.module.css"
 import seigaiha from './projs/seigaiha.gif';
 import blue from './projs/blue.gif';
 import buddy from './projs/buddy.png'
+import annabel from './projs/annabel.gif'
+
 
 export default function Projects(props) {
     return(
@@ -19,7 +21,8 @@ export default function Projects(props) {
                     <p className={styles.proj_title}>BuddyUp</p>
                 </Col>
                 <Col className = "d-flex flex-column justify-content-center align-items-center">
-                    
+                <img className = {styles.proj_style} src = {annabel}></img>
+                <p className={styles.proj_title}>Annabel Lee</p>
                 </Col>
                 
             </Row>
