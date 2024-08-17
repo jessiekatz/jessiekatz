@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import P5Sketch from './Pixels.js';
-import styles from "./styles/Nav.module.css"
+import styles from "../styles/Nav.module.css"
 
 export default function Nav({ projectsRef }) {
     const scrollTo = (ref) => {

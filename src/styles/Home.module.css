@@ -1,18 +1,22 @@
-@font-face {
-    font-family: Jenson;
-    src: url('Jenson.ttf')  format('truetype');
-  }
 
-  @font-face {
-    font-family: JensonItalic;
-    src: url('JensonItalic.ttf')  format('truetype');
-  }
+.div {
+    position: relative;
+    height: 5em;
+    width: 100%;
+    display: flex; 
+    justify-content: flex-end; /* Aligns the ul to the right */
+    align-items: center; /* Vertically centers the content */
+    /* border-bottom: 1px solid black; */
+}
 
 .font_size {
-    font-family: Jenson;
-    font-size: 6em;
+    font-family: "Roboto Mono";
+    font-size: 3em;
+    font-weight: 500;
     display: inline;
     position: relative;
+    padding: 0em 0.5em;
+    margin: 0;
 }
 
 .font_size_2 {
@@ -24,8 +28,28 @@
 .sketch_home {
     position: absolute;
     z-index: -1;
-    left: 0;
+    right: 0;
     padding: 0em;
-    height: 5em;
-    width: 18%;
+    max-height: 5em;
+    width: 6em;
 } 
+
+
+.ul_pad {
+    padding: 1em 0em 0 0;
+    text-align: right;
+}
+
+.nav_link {
+    color: black;
+    text-align: right;
+    list-style-type: none;
+    z-index: 1;
+    display: inline-block;
+    margin: 0em 0em 0em 1em;
+    padding: 0 0 0 1em;
+    font-size: 1.2em;
+    position: relative;
+    right: 0;
+    bottom: 0;
+}

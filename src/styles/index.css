@@ -1,17 +1,7 @@
-@font-face {
-    font-family: Jenson;
-    src: url('Jenson.ttf')  format('truetype');
-  }
-
-  @font-face {
-    font-family: JensonItalic;
-    src: url('JensonItalic.ttf')  format('truetype');
-  }
-
-
 html, body, #root, .app-container {
-    /* background-color: rgb(250, 237, 249); */
     background-color: rgb(252, 247, 252);
+    /* background-color: rgb(255, 214, 228); */
+    /* background-color: #0a0c9e; */
     height: 100%;
     margin: 0;
     display: flex;
@@ -29,30 +19,16 @@ html, body, #root, .app-container {
     z-index: -1;
 }
 
-Nav {
-    color: black;
-    z-index: 1;
-    text-align: center;
-    width: 100%;
-}
-
-
-Nav ul {
-    position: absolute;
-}
-
-
 .content {
     z-index: 1; 
-    margin: 2em 5em;
-    height: 20%;
+    margin: 0em 0em;
+    height: 5em;
+    display: flex;
 }
-
-
 
 
 .projs {
-    margin: 3em 5em;
+    margin: 3em 3em;
 }
 
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import './styles/App.css';
-import Home from './Home.js';
-import Footer from './Footer.js'
-import Content from './Content.js'
-import Nav from './Nav.js'
-import Projects from './Projects.js'
+import Home from './components/Home.js';
+import Footer from './components/Footer.js'
+import Content from './components/Content.js'
+import Nav from './components/Nav.js'
+import Projects from './components/Projects.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
@@ -16,7 +16,6 @@ class App extends React.Component {
   render() {
     return (
         <div className="app-container">
-            <Nav projectsRef={this.projectsRef}/>
 
             <div className="content">
                 <Home className="home" />
@@ -25,9 +24,10 @@ class App extends React.Component {
         {/* <Footer /> */}
 
             <div className="projs" ref={this.projectsRef}>
-                <Projects name ="projects / experiments" />
+                <Projects name ="art stuff" />
             </div>
 
+            {/* <Nav projectsRef={this.projectsRef}/> */}
 
         </div>
       );

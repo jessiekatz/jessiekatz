@@ -1,14 +1,6 @@
-@font-face {
-    font-family: Jenson;
-    src: url('Jenson.ttf')  format('truetype');
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-  @font-face {
-    font-family: JensonItalic;
-    src: url('JensonItalic.ttf')  format('truetype');
-  }
-
-  .nav_div {
+.nav_div {
     width: 100%;
     height: 8vh;
     text-align: right;
@@ -30,12 +22,11 @@
 } 
 
   .nav_link {
-    font-family: Jenson;
     color: black;
     text-align: right;
     list-style-type: none;
     z-index: 1;
     display: inline-block;
-    /* margin: 0.2em 2em 0em 2em; */
+    margin: 1em 2em 0em 2em;
     font-size: 1.75em;
 }
