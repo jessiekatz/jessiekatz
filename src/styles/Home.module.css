@@ -31,12 +31,13 @@
     right: 0;
     padding: 0em;
     max-height: 5em;
-    width: 6em;
+    width: 6.5em;
 } 
 
 
 .ul_pad {
     padding: 1em 0em 0 0;
+    font-family: "Roboto Mono";
     text-align: right;
 }
 

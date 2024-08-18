@@ -17,11 +17,14 @@ class App extends React.Component {
     return (
         <div className="app-container">
 
-            <div className="content">
+            <div className="nav">
                 <Home className="home" />
-                {/* <Content /> */}
             </div>
-        {/* <Footer /> */}
+            
+            <div className="about">
+                <Content />
+            </div>
+            
 
             <div className="projs" ref={this.projectsRef}>
                 <Projects name ="art stuff" />

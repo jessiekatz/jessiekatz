@@ -1,7 +1,7 @@
 html, body, #root, .app-container {
-    background-color: rgb(252, 247, 252);
+    /* background-color: rgb(252, 247, 252); */
     /* background-color: rgb(255, 214, 228); */
-    /* background-color: #0a0c9e; */
+    background-color: rgb(255, 230, 249);
     height: 100%;
     margin: 0;
     display: flex;
@@ -19,7 +19,7 @@ html, body, #root, .app-container {
     z-index: -1;
 }
 
-.content {
+.nav {
     z-index: 1; 
     margin: 0em 0em;
     height: 5em;

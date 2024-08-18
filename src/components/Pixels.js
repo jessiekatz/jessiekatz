@@ -49,8 +49,8 @@ function P5Sketch() {
     };
 
     const draw = (p) => {
-        // p.background(250, 237, 249);
-        p.background(252, 247, 252);
+        p.background(255, 230, 249);
+        // p.background(252, 247, 252);
 
         for (let c = 0; c < num_col; c++) {
             for (let r = 0; r < num_row; r++) {
@@ -129,7 +129,7 @@ function P5Sketch() {
         draw_pix(p) {
             p.noStroke();
             this.pat = this.nextPat;
-            p.fill(215, 229, 240, this.pat);
+            p.fill(215, 219, 240, this.pat);
             p.rect(this.x, this.y, pix_size * 1.75, pix_size * 1.75);
         }
     }
