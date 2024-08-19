@@ -3,7 +3,7 @@ import P5Sketch from './Pixels.js';
 import { Link } from 'react-router-dom';
 
 
-export default function Home() {
+export default function Home(props) {
     return(
         <div className={styles.div}>
             
@@ -13,12 +13,12 @@ export default function Home() {
             </div>
             <ul className={styles.ul_pad}>
             <li className={styles.nav_link}>
-                    <Link to="https://github.com/jessiekatz" style={{ paddingRight: 20, color: 'black', textDecoration: 'none' }}>
+                    <Link to="/about" style={{ paddingRight: 20, color: 'black', textDecoration: 'none' }}>
                         about
                     </Link>
                 </li>
                 <li className={styles.nav_link}>
-                    <Link to="https://github.com/jessiekatz" style={{ paddingRight: 20, color: 'black', textDecoration: 'none' }}>
+                    <Link to="/projects" style={{ paddingRight: 20, color: 'black', textDecoration: 'none' }}>
                         art
                     </Link>
                 </li>

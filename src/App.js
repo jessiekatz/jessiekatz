@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/App.css';
 import Home from './components/Home.js';
 import Content from './components/Content.js'
 import Projects from './components/Projects.js'
 import Ripples from './components/Ripple.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Outlet } from 'react-router-dom';
+
+// const [show, setShow] = useState(null);
 
 class App extends React.Component {
     constructor(props) {
@@ -19,18 +22,15 @@ class App extends React.Component {
             <div className="nav">
                 <Home className="home" />
             </div>
-            
-            <div className="about">
-                {/* <div className="rip" >
-                    <Ripples/>
-                </div> */}
+            <Outlet />
+            {/* <div className="about">
                 <Content />
             </div>
             
 
             <div className="projs" ref={this.projectsRef}>
                 <Projects name ="art stuff" />
-            </div>
+            </div> */}
 
         </div>
       );
