@@ -1,10 +1,9 @@
 import React from 'react';
 import './styles/App.css';
 import Home from './components/Home.js';
-import Footer from './components/Footer.js'
 import Content from './components/Content.js'
-import Nav from './components/Nav.js'
 import Projects from './components/Projects.js'
+import Ripples from './components/Ripple.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
@@ -22,6 +21,9 @@ class App extends React.Component {
             </div>
             
             <div className="about">
+                {/* <div className="rip" >
+                    <Ripples/>
+                </div> */}
                 <Content />
             </div>
             
@@ -29,8 +31,6 @@ class App extends React.Component {
             <div className="projs" ref={this.projectsRef}>
                 <Projects name ="art stuff" />
             </div>
-
-            {/* <Nav projectsRef={this.projectsRef}/> */}
 
         </div>
       );

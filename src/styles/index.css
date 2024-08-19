@@ -7,23 +7,19 @@ html, body, #root, .app-container {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-}
-
-#canvas-container {
-    height: 7vh; 
-    flex-shrink: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     z-index: -1;
 }
+
 
 .nav {
     z-index: 1; 
     margin: 0em 0em;
     height: 5em;
     display: flex;
+}
+
+.about {
+    margin: 3em 3em;
 }
 
 

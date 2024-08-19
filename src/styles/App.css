@@ -2,3 +2,14 @@
   text-align: center;
 }
 
+.rip {
+    position: absolute;
+    height: 10em;
+    width: 50%;
+    z-index: -1;
+}
+
+.about {
+    
+    padding-bottom: 10em;
+}

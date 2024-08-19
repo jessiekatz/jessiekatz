@@ -21,9 +21,9 @@ export default function Projects(props) {
             </div> */}
 
             
+<p className={styles.font_size}>{props.name}</p>
             <Container>
                 
-            <p className={styles.font_size}>{props.name}</p>
             <Row className="justify-content-md-center align-items-center">
                 <Col className = "d-flex flex-column justify-content-center align-items-center">
                     <img className = {styles.proj_style} src = {blue} alt="project"></img>
