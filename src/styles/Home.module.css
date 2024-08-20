@@ -4,25 +4,9 @@
     height: 5em;
     width: 100%;
     display: flex; 
-    justify-content: flex-end; /* Aligns the ul to the right */
-    align-items: center; /* Vertically centers the content */
-    /* border-bottom: 1px solid black; */
-}
+    justify-content: flex-end;
+    align-items: center; 
 
-.font_size {
-    font-family: "Roboto Mono";
-    font-size: 3em;
-    font-weight: 500;
-    display: inline;
-    position: relative;
-    padding: 0em 0.5em;
-    margin: 0;
-}
-
-.font_size_2 {
-    font-family: Jenson;
-    font-size: 4em;
-    display: inline;
 }
 
 .sketch_home {
@@ -37,8 +21,9 @@
 
 .ul_pad {
     padding: 1em 0em 0 0;
-    font-family: "Roboto Mono";
+    font-family: "calibre";
     text-align: right;
+    font-size: 1.25em;
 }
 
 .nav_link {

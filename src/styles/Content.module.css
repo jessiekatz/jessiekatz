@@ -1,15 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+@font-face {
+    font-family: canela;
+    src: url(./Canela_Collection/Canela_Family/Canela-Regular.otf);
+  }
+
+  @font-face {
+    font-family: canela deck;
+    src: url(./Canela_Collection/Canela_Deck/CanelaDeck-Regular.otf);
+  }
+
+
 .font {
-    font-family: 'Roboto Mono';
-    font-size: 1.2em;
+    font-family: 'canela deck';
+    font-size: 3em;
 }
 
 .font_size_2 {
-    /* font-family: "Sedan", serif; */
+    font-family: 'canela deck';
+    font-size: 2.5em;
     /* font-style: italic; */
-    font-size: 3em;
-    font-weight: 400;
+}
+
+.likes {
+    font-family: "calibre";
 }
 
 .content {
@@ -18,5 +32,5 @@
     z-index: 1;
     width: 100%;
     height: 10vh;
-    /* padding: 5em; */
+    padding: 5em;
 }

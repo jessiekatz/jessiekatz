@@ -1,12 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 
+@font-face {
+    font-family: calibre-thin;
+    src: url(./calibre/TestCalibre-Thin.otf);
+  }
+
+@font-face {
+    font-family: calibre;
+    src: url(./calibre/TestCalibre-Regular.otf);
+  }
+
+@font-face {
+    font-family: calibre-bold;
+    src: url(./calibre/TestCalibre-Semibold.otf);
+  }
+
+  @font-face {
+    font-family: calibre-med;
+    src: url(./calibre/TestCalibre-Medium.otf);
+  }
+
+p {
+    font-family: "calibre";
+    font-size: 1.5em;
+}
+
 .font_size {
-    font-family: 'Roboto Mono';
+    font-family: 'calibre-bold';
     font-size: 3em;
     padding: 0em;
     margin: 0 0 1em 0;
     z-index: 1;
+}
+
+.proj_top {
+    padding: 2em 3em;
 }
 
 .proj_style {
@@ -14,7 +43,7 @@
 }
 
 .proj_title {
-    font-family: 'Roboto Mono';
+    font-family: 'calibre';
     font-size: 1.5em;
     padding: 0em;
     margin: 0.5em 0 2em 0em;

@@ -20,8 +20,11 @@ export default function Projects(props) {
                  <P5Sketch  />
             </div> */}
 
+            <div className={styles.proj_top}>
+            <p className={styles.font_size}>{props.name}</p>
+            <p className={styles.proj_title}>A collection of projects I made with javascript libraries like p5.js and three.js</p>
+            </div>
             
-<p className={styles.font_size}>{props.name}</p>
             <Container>
                 
             <Row className="justify-content-md-center align-items-center">
