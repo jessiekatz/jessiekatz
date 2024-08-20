@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './styles/App.css';
 import Home from './components/Home.js';
+// import Footer from './components/Footer.js';
 import Content from './components/Content.js'
 import Projects from './components/Projects.js'
 import Ripples from './components/Ripple.js'
@@ -31,6 +32,8 @@ class App extends React.Component {
             <div className="projs" ref={this.projectsRef}>
                 <Projects name ="art stuff" />
             </div> */}
+
+            {/* <Footer /> */}
 
         </div>
       );

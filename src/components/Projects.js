@@ -14,7 +14,7 @@ import P5Sketch from './Pixels.js';
 export default function Projects(props) {
     return(
         
-        <div>
+        <div className={styles.proj_section}>
             
             {/* <div className = {styles.sketch_home}>
                  <P5Sketch  />
@@ -22,7 +22,7 @@ export default function Projects(props) {
 
             <div className={styles.proj_top}>
             <p className={styles.font_size}>{props.name}</p>
-            <p className={styles.proj_title}>A collection of projects I made with javascript libraries like p5.js and three.js</p>
+                <p className={styles.proj_title}>A collection of projects I made with javascript libraries like p5.js and three.js</p>
             </div>
             
             <Container>

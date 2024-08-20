@@ -10,6 +10,17 @@
     src: url(./Canela_Collection/Canela_Deck/CanelaDeck-Regular.otf);
   }
 
+  @font-face {
+    font-family: canela deck med;
+    src: url(./Canela_Collection/Canela_Deck/CanelaDeck-Medium-Trial.otf);
+  }
+
+  @font-face {
+    font-family: canela deck italic;
+    src: url(./Canela_Collection/Canela_Deck/CanelaDeck-RegularItalic.otf);
+  }
+
+  
 
 .font {
     font-family: 'canela deck';
@@ -17,20 +28,58 @@
 }
 
 .font_size_2 {
-    font-family: 'canela deck';
-    font-size: 2.5em;
-    /* font-style: italic; */
+    font-family: 'calibre-med';
+    font-size: 3em;
+    margin-bottom: 0;
 }
 
-.likes {
+.about {
     font-family: "calibre";
+    width: 60%;
+}
+
+.custom {
+    font-family: 'canela deck med';
+    font-size: 1em;
+}
+
+
+
+
+.likes {
+    font-family: "calibre-med";
+    font-size: 3em;
+    display: inline;
+    line-height: 1.25em;
+}
+
+.likes_section {
+    width: 80%;
+    margin: 10% 0;
+}
+
+.special {
+    font-family: "canela deck italic";
+    font-size: 3em;
+    margin: 0em 0em;
+    display: inline;
 }
 
 .content {
     position: relative;
-    /* display: flex;  */
     z-index: 1;
     width: 100%;
     height: 10vh;
-    padding: 5em;
+    padding: 5em 8em;
+}
+
+.slash {
+    font-size: 1.3em;
+    padding: 0 0.5em;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 4em 5em;
+    }
 }
