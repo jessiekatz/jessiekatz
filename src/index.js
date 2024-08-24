@@ -5,25 +5,31 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./styles/index.css";
+import "./styles/fonts.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import Content from './components/Content.js'
 import Projects from './components/Projects.js'
+import About from './components/About.js'
 
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <App />,
-      children: [{
-            path: "/about",
-            element: <Content />
-        },
-        {
-            path: "/projects",
-            element: <Projects name ="art stuff"/>
-        }]
+    //   children: [{
+    //         path: "/about",
+    //         element: <Content />
+    //     },
+    //     {
+    //         path: "/projects",
+    //         element: <Projects name ="art stuff"/>
+    //     }]
+    },
+    {
+        path: "/about",
+        element: <About />
     }
   ]);
 

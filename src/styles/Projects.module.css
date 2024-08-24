@@ -1,50 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
-
-@font-face {
-    font-family: calibre-thin;
-    src: url(./calibre/TestCalibre-Thin.otf);
-  }
-
-@font-face {
-    font-family: calibre;
-    src: url(./calibre/TestCalibre-Regular.otf);
-  }
-
-@font-face {
-    font-family: calibre-bold;
-    src: url(./calibre/TestCalibre-Semibold.otf);
-  }
-
-  @font-face {
-    font-family: calibre-med;
-    src: url(./calibre/TestCalibre-Medium.otf);
-  }
-
-p {
-    font-family: "calibre";
-    font-size: 1.5em;
-}
 
 .font_size {
-    font-family: 'calibre-bold';
-    font-size: 3em;
+    font-family: 'jenson';
+    font-size: 5em;
+    line-height: 0.75em;
     padding: 0em;
-    margin: 0 0 1em 0;
+    margin: 0 0 0em 0;
     z-index: 1;
 }
 
-.proj_section {
-    padding: 5em 8em;
-}
 
 .proj_style {
     width: 90%;
 }
 
 .proj_title {
-    font-family: 'calibre';
-    font-size: 1.5em;
+    font-family: 'source code pro';
+    font-size: 1.25em;
+    font-weight: 500;
+    /* font-style: italic; */
     padding: 0em;
     margin: 0.5em 0 2em 0em;
 }

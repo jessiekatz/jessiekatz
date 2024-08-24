@@ -30,7 +30,6 @@ function P5Sketch() {
     const setup = (p, canvasParentRef) => {
         // Ensure that the canvas uses the size of its parent container
         p.createCanvas(canvasParentRef.offsetWidth, 80).parent(canvasParentRef);
-        console.log(canvasParentRef.offsetHeight)
         num_col = p.floor(p.width / pix_size);
         num_row = p.floor(p.height / pix_size);
         restart(p);

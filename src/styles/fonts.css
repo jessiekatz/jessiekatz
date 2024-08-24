@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+@font-face {
+    font-family: jenson italic;
+    src: url(./jenson/JensonItalic.ttf);
+}
+
+@font-face {
+    font-family: jenson;
+    src: url(./jenson/Jenson.ttf);
+}
+
+@font-face {
+    font-family: sudbury;
+    src: url(./sudbury/SudburyBook-ayqJ.ttf);
+}
+
+@font-face {
+    font-family: sudbury-b;
+    src: url(./sudbury/SudburyBookItalic-OEpo.ttf);
+}
+
+

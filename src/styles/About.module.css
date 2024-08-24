@@ -1,0 +1,78 @@
+.likes_section {
+    /* width: 75%; */
+    margin: 5em 6em 10% 5em;
+    padding: 0 12em 0 0;
+}
+
+.likes_title {
+    font-family: 'jenson';
+    font-size: 3.5em;
+    margin-bottom: 0;
+}
+
+.likes_row {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    margin-bottom: 10px; /* Space between rows */
+}
+.likes {
+    font-family: "sudbury";
+    font-size: 2em;
+    display: inline;
+    line-height: 1.25em;
+    cursor: default;
+}
+
+
+
+
+
+
+
+.special {
+    font-family: "sudbury-b";
+    font-size: 2em;
+    display: inline;
+    cursor: pointer;
+
+}
+
+
+
+.likes, .special {
+    padding: 0 1em;
+}
+
+.special:hover {
+        color: rgb(158, 184, 255);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.slash {
+    font-family: "offbit-reg";
+    font-size: 1.3em;
+    padding: 0 0.5em;
+}
+
+.about {
+    font-family: "source code pro";
+    width: 60%;
+    font-size: 1.25em;
+    margin: 10em 0;
+}  
+
+.bolder {
+    font-weight: 700;
+}
+
+@media (max-width: 500px) {
+    .likes_section {
+        margin: 5em 2em 10% 5em;
+        padding: 0 1em 0 0;
+    }
+}

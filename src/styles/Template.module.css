@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+}
+
+.topRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.bottomRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.leftDiv, .rightDiv {
+    flex: 1;
+    min-width: 250px;
+}
+
+.description {
+    margin-top: 20px;
+}

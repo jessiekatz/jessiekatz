@@ -21,8 +21,8 @@ export default function Projects(props) {
             </div> */}
 
             <div className={styles.proj_top}>
-            <p className={styles.font_size}>{props.name}</p>
-                <p className={styles.proj_title}>A collection of projects I made with javascript libraries like p5.js and three.js</p>
+                <p className={styles.font_size}>{props.name}</p>
+                <p className={styles.proj_title}>A collection of projects I coded primarily in HTML, CSS, and JS</p>
             </div>
             
             <Container>

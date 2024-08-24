@@ -15,17 +15,42 @@ html, body, #root, .app-container {
     margin: 0em 0em;
     height: 5em;
     display: flex;
+    position: sticky;
 }
 
-.about {
-    margin: 3em 3em;
+.home_body {
+    padding: 3em 5% 2em 10%;
+}
+
+.folio {
+    margin: 5em 0 10em 0;
 }
 
 
+.home_intro {
+     padding: 0 0 10em 0;
+} 
+
+/*
 .projs {
-    margin: 3em 3em;
+    margin: 3em 8em;
+    padding: 2em;
 }
 
+@media (max-width: 900px) {
+    .about, .projs {
+        margin: 1em 5em;
+        padding: 0 0 13em 0;
+    }
+
+}
+
+@media (max-width: 630px) {
+    .about, .projs {
+        margin: 1em 0em 0 1em;
+        padding: 0 0 13em 0;
+    }
+}
 
 @media (max-width: 768px) {
     nav {
@@ -59,4 +84,4 @@ html, body, #root, .app-container {
         width: 20%;
     }
 
-}
+} */

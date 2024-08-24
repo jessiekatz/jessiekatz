@@ -1,85 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+.intro {
+    margin: 3em 0 0 0;
+}
 
-@font-face {
-    font-family: canela;
-    src: url(./Canela_Collection/Canela_Family/Canela-Regular.otf);
-  }
+.content p {
+    word-spacing: 0.1em;   
+}
 
-  @font-face {
-    font-family: canela deck;
-    src: url(./Canela_Collection/Canela_Deck/CanelaDeck-Regular.otf);
-  }
+.name {
+    font-family: 'sudbury-b';
+    font-size: 10em;
+    padding: 0em 0em 0 0.1em; 
+    line-height: 0.4em;
+}
 
-  @font-face {
-    font-family: canela deck med;
-    src: url(./Canela_Collection/Canela_Deck/CanelaDeck-Medium-Trial.otf);
-  }
-
-  @font-face {
-    font-family: canela deck italic;
-    src: url(./Canela_Collection/Canela_Deck/CanelaDeck-RegularItalic.otf);
-  }
-
-  
+.desc {
+    font-family: 'jenson italic';
+    font-size: 3em;
+    padding: 0em;
+}
 
 .font {
-    font-family: 'canela deck';
-    font-size: 3em;
+    font-family: "jenson";
+    font-size: 4em;
+    font-weight: 500;
 }
 
-.font_size_2 {
-    font-family: 'calibre-med';
-    font-size: 3em;
-    margin-bottom: 0;
+.norm {
+    font-family: 'jenson';
 }
 
-.about {
-    font-family: "calibre";
-    width: 60%;
+.sent {
+    font-family: 'sudbury';
+    margin: 2em 0 0 0.25em;
+    font-size: 1.25em;
 }
 
-.custom {
-    font-family: 'canela deck med';
-    font-size: 1em;
+.bolder {
+    font-weight: 700;
 }
 
-
-
-
-.likes {
-    font-family: "calibre-med";
-    font-size: 3em;
-    display: inline;
-    line-height: 1.25em;
+@media (max-width: 1092px) {
+    .name {
+        font-size: 10em;
+    }
 }
 
-.likes_section {
-    width: 80%;
-    margin: 10% 0;
+@media (max-width: 730px) {
+    .name {
+        font-size: 8em;
+
+    }
 }
 
-.special {
-    font-family: "canela deck italic";
-    font-size: 3em;
-    margin: 0em 0em;
-    display: inline;
-}
+@media (max-width: 455px) {
+    .name {
+        font-size: 9em;
+        line-height: 0.55em;
 
-.content {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 10vh;
-    padding: 5em 8em;
-}
-
-.slash {
-    font-size: 1.3em;
-    padding: 0 0.5em;
-}
-
-@media (max-width: 768px) {
-    .content {
-        padding: 4em 5em;
     }
 }
