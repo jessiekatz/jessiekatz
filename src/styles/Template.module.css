@@ -14,23 +14,55 @@
 }
 
 .photo {
-    width: 100%;
-    max-width: 200px;
+    width: 30%;
+    max-width: 100%;
     height: auto;
+    margin: 0 2em;
 }
 
 .bottomRow {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 20px;
+}
+
+.techStack {
+    font-family: 'jenson';
+    font-size: 2.5em;
+}
+
+.bottomRow {
+    font-family: 'Source Code Pro';
 }
 
 .leftDiv, .rightDiv {
     flex: 1;
     min-width: 250px;
+    padding: 3em;
+}
+
+
+.rightDiv {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100%;            /* Ensure the div takes up the full height of its container */
+}
+
+.rightDiv > div {
+    text-align: left;      /* Center the content inside the inner div */
 }
 
 .description {
     margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .leftDiv, .rightDiv {
+        flex: 1;
+        min-width: 250px;
+        padding: 1em;
+    }
 }

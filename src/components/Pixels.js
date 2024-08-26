@@ -1,37 +1,45 @@
 import React, { useEffect, useRef } from 'react';
 import p5 from 'p5';
 
-function P5Sketch() {
+function P5Sketch({id}) {
     let pix_size = 10;
     let pix_arr = [];
     let num_col;
     let num_row;
 
-    const sketchRef = useRef(null);
     const p5InstanceRef = useRef(null);
 
     useEffect(() => {
-        const sketch = (p) => {
-            p.setup = () => setup(p, sketchRef.current);
-            p.draw = () => draw(p);
-        };
+        // Delay the execution to ensure the DOM is ready
+        const timeoutId = setTimeout(() => {
+            const canvasParent = document.getElementById(id);
 
-        // Create a new p5 instance, assign it to the reference
-        p5InstanceRef.current = new p5(sketch, sketchRef.current);
+            if (canvasParent) {
+                const sketch = (p) => {
+                    p.setup = () => setup(p, canvasParent);
+                    p.draw = () => draw(p);
+                };
 
-        // Cleanup function to remove the p5 instance on component unmount
+                p5InstanceRef.current = new p5(sketch, canvasParent);
+            } else {
+                console.error(`Element with id "${id}" not found`);
+            }
+        }, 0); // SetTimeout to next event loop cycle
+
         return () => {
             if (p5InstanceRef.current) {
                 p5InstanceRef.current.remove();
             }
+            clearTimeout(timeoutId);
         };
-    }, []);
+    }, [id]);
 
     const setup = (p, canvasParentRef) => {
         // Ensure that the canvas uses the size of its parent container
-        p.createCanvas(canvasParentRef.offsetWidth, 80).parent(canvasParentRef);
+        p.createCanvas(canvasParentRef.offsetWidth, canvasParentRef.offsetHeight).parent(canvasParentRef);
         num_col = p.floor(p.width / pix_size);
         num_row = p.floor(p.height / pix_size);
+        console.log(canvasParentRef);
         restart(p);
         p.frameRate(10);
     };
@@ -132,8 +140,9 @@ function P5Sketch() {
             p.rect(this.x, this.y, pix_size * 1.75, pix_size * 1.75);
         }
     }
+    return null;
 
-    return <div ref={sketchRef}/>;
+    // return <div height="100%" ref={sketchRef}/>;
 }
 
 export default P5Sketch;

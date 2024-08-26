@@ -1,19 +1,64 @@
 .header {
-    font-family: "jenson";
+    text-align: center;
     font-size: 5em;
+    margin-bottom: 1rem;
+    font-family: 'jenson';
+    text-align: left;
 }
 
+/* Container for the project titles */
+.projects_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-family: 'sudbury';
+}
+
+/* Project titles */
 .proj_title {
-    font-family: "sudbury-b";
-    font-size: 2.5em;
-    margin: 0em 0.8em;
-    display: inline;
-    color: rgb(0,0,0);
     cursor: pointer;
-    transition: color 0.3s ease;
+    font-size: 2em;
+    margin: 0.3rem 0;
+    transition: color 0.3s;
+    font-family: 'sudbury';
 }
 
+/* Highlight active project title */
 .active {
-    color: rgb(158, 184, 255);
+    color: rgb(158, 184, 255);;
 }
 
+/* Container for the template */
+.template_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .projects_list {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .proj_title {
+        margin: 1rem;
+        font-size: 2em;
+    }
+
+    .template_container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+/* Media query for very large screens */
+@media (min-width: 1200px) {
+    .template_container {
+        justify-content: space-between;
+    }
+}

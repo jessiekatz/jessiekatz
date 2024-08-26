@@ -67,12 +67,18 @@
 }  
 
 .bolder {
+    font-family: "source code pro";
     font-weight: 700;
+    color: rgb(0,0,0);
 }
 
 @media (max-width: 500px) {
     .likes_section {
-        margin: 5em 2em 10% 5em;
+        margin: 5em 2em 10% 2em;
         padding: 0 1em 0 0;
+    }
+
+    .about {
+        width: 100%;
     }
 }

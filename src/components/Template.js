@@ -1,15 +1,19 @@
 import styles from "../styles/Template.module.css";
+import im from "../projs/buddy1.jpg";
+import im2 from "../projs/buddy2.png";
 
 export default function Template({ name, description, techStack, images }) {
+    const imgs = [im, im2]
     return (
         <div className={styles.container}>
             {/* Conditional rendering for images */}
             {images && images.length > 0 ? (
                 <div className={styles.topRow}>
                     {images.map((image, index) => (
+                        console.log(image),
                         <img 
                             key={index}
-                            src={image} 
+                            src={imgs[index]} 
                             alt={`Project image ${index + 1}`} 
                             className={styles.photo} 
                         />
@@ -25,12 +29,15 @@ export default function Template({ name, description, techStack, images }) {
                     <p>{description}</p>
                 </div>
                 <div className={styles.rightDiv}>
-                    <h3>Tech Stack:</h3>
-                    <ul>
-                        {techStack.map((tech, index) => (
-                            <li key={index}>{tech}</li>
-                        ))}
-                    </ul>
+                    <div>
+                        <h3 className={styles.techStack}>Tech Stack</h3>
+                        <ul>
+                            {techStack.map((tech, index) => (
+                                <li key={index}>{tech}</li>
+                            ))}
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
         </div>

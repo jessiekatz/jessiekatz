@@ -4,6 +4,7 @@ import Home from './components/Home.js';
 import Content from './components/Content.js';
 import Projects from './components/Projects.js';
 import Folio from './components/Folio.js';
+import Footer from './components/Footer.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
@@ -32,6 +33,8 @@ class App extends React.Component {
                         <Projects name="art" />
                     </div> */}
                 </div>
+                
+                <Footer />
             </div>
         );
     }

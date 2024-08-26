@@ -4,7 +4,6 @@ import Col from 'react-bootstrap/Col';
 import styles from "../styles/Projects.module.css"
 import seigaiha from '../projs/seigaiha.gif';
 import blue from '../projs/blue.gif';
-import buddy from '../projs/buddy.png'
 import annabel from '../projs/annabel.gif'
 
 import P5Sketch from './Pixels.js';

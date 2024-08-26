@@ -42,6 +42,7 @@
 @media (max-width: 1092px) {
     .name {
         font-size: 10em;
+        line-height: 0.7em;
     }
 }
 

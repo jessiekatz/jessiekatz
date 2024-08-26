@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Template from './Template.js';
 import styles from '../styles/Folio.module.css';
+import buddy1 from '../projs/buddy1.jpg';
+import buddy2 from '../projs/buddy2.png';
 
 export default function Folio() {
     const [selectedProj, setSelectedProj] = useState(null);
@@ -8,33 +10,28 @@ export default function Folio() {
     const projs = [
         {
             name: 'PokeGuessr',
-            description: 'A fun game where players guess Pokémon based on clues.',
-            techStack: ['React', 'Node.js', 'MongoDB'],
+            description: 'A Pokemon guessing game made for a final project in a web programming course.',
+            techStack: ['React', 'Node.js', 'MongoDB', 'PokeAPI'],
             images: ['photo1.jpg', 'photo2.jpg']
         },
         {
             name: 'Spootify',
-            description: 'A Spotify clone with custom playlist features.',
-            techStack: ['React', 'Express', 'PostgreSQL'],
+            description: 'A Spotify clone with custom design.',
+            techStack: ['React', 'Express', 'Spotify API'],
             images: ['photo3.jpg', 'photo4.jpg']
         },
         {
             name: 'BuddyUp',
-            description: 'A platform to find study partners for university courses.',
-            techStack: ['Vue.js', 'Firebase', 'Tailwind CSS'],
-            images: ['photo5.jpg', 'photo6.jpg']
+            description: 'A hackathon project designed and built with a group of 5 classmates. An online \
+            website to look for other individuals or groups to study with.',
+            techStack: ['React.js', 'MongoDB', 'Tailwind CSS'],
+            images: ['../projs/buddy1.jpg', '../projs/buddy2.png']
         },
         {
             name: 'Portfolio',
-            description: 'My personal portfolio showcasing my projects and skills.',
-            techStack: ['Next.js', 'Styled Components', 'Vercel'],
+            description: 'Some art projects made with various Javascript libraries.',
+            techStack: ['P5.js', 'Three.js'],
             images: ['photo7.jpg', 'photo8.jpg']
-        },
-        {
-            name: 'Jumbocode',
-            description: 'A website for a student-run coding club at Tufts University.',
-            techStack: ['HTML', 'CSS', 'JavaScript'],
-            images: ['photo9.jpg', 'photo10.jpg']
         }
     ];
 
