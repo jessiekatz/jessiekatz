@@ -1,7 +1,13 @@
 .likes_section {
-    /* width: 75%; */
     margin: 5em 6em 10% 5em;
     padding: 0 12em 0 0;
+}
+
+.about {
+    font-family: "source code pro";
+    width: 60%;
+    font-size: 1.25em;
+    margin: 10em 0;
 }
 
 .likes_title {
@@ -10,66 +16,55 @@
     margin-bottom: 0;
 }
 
-.likes_row {
-    display: flex;
-    justify-content: space-between; /* Distribute items evenly */
-    margin-bottom: 10px; /* Space between rows */
+.likes_list {
+    margin-bottom: 20px;
 }
-.likes {
+
+.likes_col {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.likes, 
+.special {
     font-family: "sudbury";
     font-size: 2em;
-    display: inline;
+    position: relative;
     line-height: 1.25em;
     cursor: default;
+    padding: 0.5em;
+    text-align: center;
 }
-
-
-
-
-
-
 
 .special {
     font-family: "sudbury-b";
-    font-size: 2em;
-    display: inline;
     cursor: pointer;
-
-}
-
-
-
-.likes, .special {
-    padding: 0 1em;
 }
 
 .special:hover {
-        color: rgb(158, 184, 255);
+    color: rgb(158, 184, 255);
 }
 
-.content {
-    position: relative;
-    z-index: 1;
-    width: 100%;
+.likes img {
+    display: none;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: auto;
 }
 
-.slash {
-    font-family: "offbit-reg";
-    font-size: 1.3em;
-    padding: 0 0.5em;
+.likes:hover img {
+    display: block;
+    width: 150px;
 }
 
-.about {
-    font-family: "source code pro";
-    width: 60%;
-    font-size: 1.25em;
-    margin: 10em 0;
-}  
-
-.bolder {
-    font-family: "source code pro";
-    font-weight: 700;
-    color: rgb(0,0,0);
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about {
+        width: 80%;
+    }
 }
 
 @media (max-width: 500px) {

@@ -1,6 +1,10 @@
 import styles from "../styles/About.module.css";
 import Home from "./Home.js";
-import { Link } from 'react-router-dom';
+import Footer from './Footer.js';
+import skog from '../assets/skog.png';
+import momo from '../assets/momo.png';
+import concert from '../assets/concert.jpg';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export default function About() {
     const likes = [
@@ -8,19 +12,13 @@ export default function About() {
         ['boba', false],
         ['sci-fi', false],
         ['skog', true],
-        ['design', true],
+        ['design', false],
         ['traveling', false],
         ['concerts', true],
         ['momo', true]
     ];
 
-    likes.sort(([a], [b]) => a.localeCompare(b)); // Sorting based on the first element in each tuple
-
-    // Group likes into rows of 4 items each
-    const groupedLikes = [];
-    for (let i = 0; i < likes.length; i += 4) {
-        groupedLikes.push(likes.slice(i, i + 4));
-    }
+    likes.sort(([a], [b]) => a.localeCompare(b));
 
     return (
         <div>
@@ -38,21 +36,23 @@ export default function About() {
                     </p>
                 </div>
                 <p className={styles.likes_title}>Some things I like</p>
-                <div className={styles.likes_list}>
-                    {groupedLikes.map((group, groupIndex) => (
-                        <div key={groupIndex} className={styles.likes_row}>
-                            {group.map(([like, special], index) => (
-                                <p
-                                    key={index}
-                                    className={special ? `${styles.special} ${styles.likes}` : styles.likes}
-                                >
+                <Container fluid className={styles.likes_list}>
+                    <Row>
+                        {likes.map(([like, special], index) => (
+                            <Col key={index} xs={12} sm={6} md={4} lg={3} className={styles.likes_col}>
+                                <p className={special ? `${styles.special} ${styles.likes}` : styles.likes}>
                                     {like}
+                                    {like === 'skog' && <img src={skog} alt="Skog" />}
+                                    {like === 'momo' && <img src={momo} alt="Momo" />}
+                                    {like === 'concerts' && <img src={concert} alt="Concert" />}
                                 </p>
-                            ))}
-                        </div>
-                    ))}
-                </div>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
             </div>
+
+            <Footer />
         </div>
     );
 }
