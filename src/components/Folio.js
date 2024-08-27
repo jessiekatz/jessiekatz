@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import Template from './Template.js';
 import styles from '../styles/Folio.module.css';
-import buddy1 from '../projs/buddy1.jpg';
-import buddy2 from '../projs/buddy2.png';
 
 export default function Folio() {
     const [selectedProj, setSelectedProj] = useState(null);
@@ -16,7 +14,7 @@ export default function Folio() {
         },
         {
             name: 'Spootify',
-            description: 'A Spotify clone with custom design.',
+            description: 'A Spotify clone with custom design.'+"\n"+'* still under construction!',
             techStack: ['React', 'Express', 'Spotify API'],
             images: ['photo3.jpg', 'photo4.jpg']
         },

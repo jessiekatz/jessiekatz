@@ -5,27 +5,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./styles/index.css";
-import "./styles/fonts.css";
+import "./styles/Fonts.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
-import Content from './components/Content.js'
-import Projects from './components/Projects.js'
 import About from './components/About.js'
 
 
 const router = createBrowserRouter([
     {
       path: "/",
-      element: <App />,
-    //   children: [{
-    //         path: "/about",
-    //         element: <Content />
-    //     },
-    //     {
-    //         path: "/projects",
-    //         element: <Projects name ="art stuff"/>
-    //     }]
+      element: <App />
     },
     {
         path: "/about",
@@ -33,7 +22,6 @@ const router = createBrowserRouter([
     }
   ]);
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
       <RouterProvider router={router} />

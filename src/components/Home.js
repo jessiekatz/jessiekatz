@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 import P5Sketch from './Pixels.js';
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-import house from '../styles/home.png';
+import house from '../assets/home.png';
 
 export default function Home({ projectsRef }) {
     const location = useLocation();
@@ -31,7 +31,7 @@ export default function Home({ projectsRef }) {
                 <P5Sketch id="skk"/>
             </div>
 
-            <Link to="/" className={styles.back_link}><img src={house} width="30px"/></Link>
+            <Link to="/" className={styles.back_link}><img src={house} width="30px" alt="house icon"/></Link>
             <ul className={styles.ul_pad}>
                 <li className={styles.nav_link}>
                     <Link to="/about" style={{ paddingRight: 20, color: 'black', textDecoration: 'none' }}>
@@ -44,7 +44,7 @@ export default function Home({ projectsRef }) {
                     </Link>
                 </li>
                 <li className={styles.nav_link}>
-                    <a href="https://github.com/jessiekatz" target="_blank" style={{ paddingRight: 20, color: 'black', textDecoration: 'none' }}>
+                    <a href="https://github.com/jessiekatz" target="_blank" rel="noreferrer" style={{ paddingRight: 20, color: 'black', textDecoration: 'none' }}>
                         github
                     </a>
                 </li>
