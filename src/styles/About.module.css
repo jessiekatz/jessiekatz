@@ -1,13 +1,18 @@
-.likes_section {
-    margin: 5em 6em 10% 5em;
-    padding: 0 12em 0 0;
+.about_section {
+    margin: 3em 0em 3em 5em;
+    padding: 0 8em 0 0;
 }
 
 .about {
     font-family: "source code pro";
-    width: 60%;
+    width: 80%;
     font-size: 1.25em;
-    margin: 10em 0;
+    margin: 7em 0 5em 0;
+}
+
+.bolder {
+    color: #000;
+    font-weight: 700;
 }
 
 .likes_title {
@@ -17,7 +22,7 @@
 }
 
 .likes_list {
-    margin-bottom: 20px;
+    margin: 2em 0 5em 0;
 }
 
 .likes_col {
@@ -62,13 +67,17 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .about_section {
+        margin: 2em 2em 10% 4em;
+        padding: 0 5em 0 0;
+    }
     .about {
         width: 80%;
     }
 }
 
 @media (max-width: 500px) {
-    .likes_section {
+    .about_section {
         margin: 5em 2em 10% 2em;
         padding: 0 1em 0 0;
     }

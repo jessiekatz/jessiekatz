@@ -26,7 +26,7 @@ export default function About() {
                 <Home />
             </div>
             
-            <div className={styles.likes_section}>
+            <div className={styles.about_section}>
             
                 <div className={styles.about}>
                     <h1 style={{fontFamily: 'jenson', fontSize: '2.5em'}}>About me</h1>

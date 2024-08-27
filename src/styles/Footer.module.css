@@ -14,7 +14,7 @@
 
 
 .grad {
-    background: linear-gradient(to top, rgba(250, 237, 249, 0.071),75%, rgb(250, 230, 249));
+    background: linear-gradient(to top, rgba(250, 237, 249, 0.071),75%, rgb(255, 230, 249));
      height: 8em;
      width: 100%;
      position: absolute;
