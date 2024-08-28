@@ -28,10 +28,6 @@ class App extends React.Component {
                     <div className="folio" ref={this.projectsRef}>
                         <Folio />
                     </div>
-
-                    {/* <div className="projs" >
-                        <Projects name="art" />
-                    </div> */}
                 </div>
                 
                 <Footer />

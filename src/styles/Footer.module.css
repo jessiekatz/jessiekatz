@@ -1,22 +1,45 @@
-.sketch_footer {
-    width: 100%;
-    height: 20em;
-    position: relative;
-    z-index: 1;
-    bottom: 0;
-}
-
 .footer {
     position: relative;
     width: 100%;
 }
 
+.text_div {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 3;
+    text-align: right;
+    padding: 1em 5em 2.5em 0; 
+}
 
+.contact_button {
+    font-family: 'jenson';
+    font-size: 2.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0; 
+    position: relative;
+    transition: 0.4s;
+}
+
+.contact_button:hover {
+    color: rgb(158, 184, 255); 
+}
 
 .grad {
-    background: linear-gradient(to top, rgba(250, 237, 249, 0.071),75%, rgb(255, 230, 249));
-     height: 8em;
-     width: 100%;
-     position: absolute;
-     z-index: 2;
+    background: linear-gradient(to top, rgba(250, 237, 249, 0.071), 55%, rgb(255, 230, 249));
+    height: 8em;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0; 
+}
+
+.sketch_footer {
+    width: 100%;
+    height: 20em;
+    position: relative;
+    z-index: 0;
 }

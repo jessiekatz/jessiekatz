@@ -31,8 +31,9 @@ export default function About() {
                 <div className={styles.about}>
                     <h1 style={{fontFamily: 'jenson', fontSize: '2.5em'}}>About me</h1>
                     <p>Welcome to my page! I'm <span className={styles.bolder}>Jessie Katz</span>. I am studying
-                    Computer Science and design/develop interfaces at <a href="https://jumbocode.org/" target="_blank" rel="noopener noreferrer" className={styles.bolder}>JumboCode</a>. I'm also part of <a href="https://www.wmfo.org" target="_blank" rel="noopener noreferrer" className={styles.bolder}>WMFO</a>, Tufts' student-run radio. When I'm not in class,
-                    I'll most likely be playing piano, at a club meeting, or helping out with research at <a href="https://hrilab.tufts.edu/" target="_blank" rel="noopener noreferrer" className={styles.bolder}>Tufts HRI Lab</a>!
+                    Computer Science and design/develop interfaces at <a href="https://jumbocode.org/" target="_blank" rel="noopener noreferrer" className={styles.bolderLink}>JumboCode</a>. I'm also part of <a href="https://www.wmfo.org" target="_blank" rel="noopener noreferrer" className={styles.bolderLink}>WMFO</a>, 
+                    Tufts' student-run radio. When I'm not in class, I'll most likely be playing piano, at a club meeting, 
+                    or helping out with research at <a href="https://hrilab.tufts.edu/" target="_blank" rel="noopener noreferrer" className={styles.bolderLink}>Tufts HRI Lab</a>!
                     </p>
                 </div>
                 <p className={styles.likes_title}>Some things I like</p>

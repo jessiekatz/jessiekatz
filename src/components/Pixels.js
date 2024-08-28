@@ -10,7 +10,6 @@ function P5Sketch({id}) {
     const p5InstanceRef = useRef(null);
 
     useEffect(() => {
-        // Delay the execution to ensure the DOM is ready
         const timeoutId = setTimeout(() => {
             const canvasParent = document.getElementById(id);
 
@@ -24,7 +23,7 @@ function P5Sketch({id}) {
             } else {
                 console.error(`Element with id "${id}" not found`);
             }
-        }, 0); // SetTimeout to next event loop cycle
+        }, 0); 
 
         return () => {
             if (p5InstanceRef.current) {
@@ -35,13 +34,12 @@ function P5Sketch({id}) {
     }, [id]);
 
     const setup = (p, canvasParentRef) => {
-        // Ensure that the canvas uses the size of its parent container
         p.createCanvas(canvasParentRef.offsetWidth, canvasParentRef.offsetHeight).parent(canvasParentRef);
         num_col = p.floor(p.width / pix_size);
         num_row = p.floor(p.height / pix_size);
         console.log(canvasParentRef);
         restart(p);
-        p.frameRate(10);
+        p.frameRate(15);
     };
 
     const restart = (p) => {
@@ -90,7 +88,7 @@ function P5Sketch({id}) {
                 pix_arr[c][r].neighbor.push(pix_arr[bottom][r]);
                 pix_arr[c][r].neighbor.push(pix_arr[c][left]);
                 pix_arr[c][r].neighbor.push(pix_arr[c][right]);
-                // pix_arr[c][r].neighbor.push(pix_arr[top][right]);
+                pix_arr[c][r].neighbor.push(pix_arr[top][right]);
                 // pix_arr[c][r].neighbor.push(pix_arr[bottom][right]);
                 pix_arr[c][r].neighbor.push(pix_arr[top][left]);
                 pix_arr[c][r].neighbor.push(pix_arr[bottom][left]);
