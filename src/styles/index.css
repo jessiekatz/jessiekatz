@@ -30,3 +30,11 @@ html, body, #root, .app-container {
 .home_intro {
      padding: 0 0 6em 0;
 } 
+
+@media (max-width: 440px) {
+    .home_body {
+        padding: 2em;
+    }
+}
+
+

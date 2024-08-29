@@ -60,3 +60,9 @@
 
     }
 }
+
+@media (max-width: 392px) {
+    .name {
+        font-size: 7em;
+    }
+}
