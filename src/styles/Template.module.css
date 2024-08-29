@@ -23,8 +23,8 @@
 .bottomRow {
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     gap: 20px;
+    font-family: 'Source Code Pro';
 }
 
 .techStack {
@@ -32,16 +32,12 @@
     font-size: 2.5em;
 }
 
-.bottomRow {
-    font-family: 'Source Code Pro';
-}
 
 .leftDiv, .rightDiv {
     flex: 1;
     min-width: 250px;
     padding: 3em;
 }
-
 
 .rightDiv {
     display: flex;
@@ -58,11 +54,20 @@
     margin-top: 20px;
 }
 
+/* Media query for screens smaller than 700px */
+@media (max-width: 720px) {
+    .bottomRow {
+        display: grid;
+    }
 
-@media (max-width: 768px) {
     .leftDiv, .rightDiv {
-        flex: 1;
-        min-width: 250px;
         padding: 1em;
+        min-width: 100%; /* Ensure divs take full width in column layout */
+    }
+
+    .photo {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 2em;
     }
 }
