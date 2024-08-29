@@ -41,20 +41,19 @@
 
 .rightDiv {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
-    height: 100%;            /* Ensure the div takes up the full height of its container */
+    justify-content: center; 
+    align-items: center;   
+    height: 100%;           
 }
 
 .rightDiv > div {
-    text-align: left;      /* Center the content inside the inner div */
+    text-align: left;     
 }
 
 .description {
     margin-top: 20px;
 }
 
-/* Media query for screens smaller than 700px */
 @media (max-width: 720px) {
     .bottomRow {
         display: grid;
@@ -62,7 +61,7 @@
 
     .leftDiv, .rightDiv {
         padding: 1em;
-        min-width: 100%; /* Ensure divs take full width in column layout */
+        min-width: 100%; 
     }
 
     .photo {

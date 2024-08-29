@@ -11,16 +11,15 @@ import spoot from '../projs/spoot.png';
 export default function Template({ name, description, techStack, images }) {
     const projects = {
         BuddyUp: [im, im2],
-        PokeGuessr: [poke,poke2], // Make sure `phot.png` is imported properly if used
-        Spootify: [spoot],   // Same for this line
+        PokeGuessr: [poke,poke2], 
+        Spootify: [spoot],  
         Portfolio: [seigaiha, blue, annabel]
     };
 
-    const projectImages = projects[name] || images; // Fallback to `images` prop if `name` is not found
+    const projectImages = projects[name] || images; 
 
     return (
         <div className={styles.container}>
-            {/* Conditional rendering for images */}
             {projectImages && projectImages.length > 0 ? (
                 <div className={styles.topRow}>
                     {projectImages.map((image, index) => (
