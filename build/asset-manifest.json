@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.11c83877.css",
+    "main.js": "/static/js/main.88981467.js",
+    "static/js/453.683be00c.chunk.js": "/static/js/453.683be00c.chunk.js",
+    "static/media/seigaiha.gif": "/static/media/seigaiha.27ba1eaf2248ac9cdcf9.gif",
+    "static/media/blue.gif": "/static/media/blue.b3f073b74700fffe6e4b.gif",
+    "static/media/annabel.gif": "/static/media/annabel.80843591e58951766ce0.gif",
+    "static/media/poke2.png": "/static/media/poke2.a1b664d7ad98eeee74ee.png",
+    "static/media/poke.png": "/static/media/poke.37299f32b84e169179be.png",
+    "static/media/momo.png": "/static/media/momo.5e6cf66b1280bf3cdc47.png",
+    "static/media/buddyup1.png": "/static/media/buddyup1.336216899891eea952ed.png",
+    "static/media/buddy2.png": "/static/media/buddy2.ffeecbdcb6ac4f009292.png",
+    "static/media/SudburyBook-ayqJ.ttf": "/static/media/SudburyBook-ayqJ.9a41d22d101dcc232de5.ttf",
+    "static/media/SudburyBookItalic-OEpo.ttf": "/static/media/SudburyBookItalic-OEpo.a5e42107ef039e3c95d0.ttf",
+    "static/media/skog.png": "/static/media/skog.931ddae3d31dfe7a660b.png",
+    "static/media/spoot.png": "/static/media/spoot.d119032da1772efe1a8b.png",
+    "static/media/JensonItalic.ttf": "/static/media/JensonItalic.18ea3a1594f23c0e588c.ttf",
+    "static/media/Jenson.ttf": "/static/media/Jenson.e3b4c458bfd8fb2ea4c1.ttf",
+    "static/media/concert.jpg": "/static/media/concert.a4ce5a76464404682564.jpg",
+    "index.html": "/index.html",
+    "main.11c83877.css.map": "/static/css/main.11c83877.css.map",
+    "main.88981467.js.map": "/static/js/main.88981467.js.map",
+    "453.683be00c.chunk.js.map": "/static/js/453.683be00c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11c83877.css",
+    "static/js/main.88981467.js"
+  ]
+}
