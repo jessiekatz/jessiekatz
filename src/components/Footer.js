@@ -5,7 +5,7 @@ export default function Footer() {
     return(
     <div className={styles.footer}>
         <div className={styles.text_div}>
-            <button className={styles.contact_button} onClick={() => window.location.href = 'mailto:youremail@example.com'}>
+            <button className={styles.contact_button} onClick={() => window.location.href = 'mailto:jess.katz888@gmail.com'}>
                 Contact me
             </button>
         </div>
